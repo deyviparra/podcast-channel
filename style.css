@@ -319,6 +319,11 @@ footer {
     margin: 0;
     display: block;
     padding-top: 176px; }
+    .episodios h2 {
+      margin: 0;
+      padding: 0;
+      margin-left: 13.9%;
+      font-size: 48px; }
     .episodios .contenedor-podcast {
       padding: 0;
       margin: 26px 6.9%;
@@ -339,7 +344,6 @@ footer {
     .nosotros .contenedor-nosotros img {
       margin-right: 0;
       width: 31.8%;
-      height: 660px;
       transform: translateY(-33px);
       margin-left: 13.9%; }
     .nosotros .contenedor-nosotros .nosotros-text-container {
@@ -386,4 +390,31 @@ footer {
           max-width: 220px; }
 
   .novedades {
-    height: 518px; } }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 518px;
+    overflow: hidden; }
+    .novedades .back-oblicuo {
+      height: 800px; }
+    .novedades h2 {
+      font-size: 48px; }
+    .novedades a {
+      font-size: 18px;
+      padding: 16px 4.1%; }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row; }
+    footer p {
+      margin: 0;
+      padding: 0;
+      margin-left: 6.9%;
+      font-size: 16px;
+      font-weight: 500; }
+    footer .contenedor-redes {
+      margin-right: 4.4%; }
+      footer .contenedor-redes .fa-lg {
+        margin-right: 36px; } }
