@@ -326,16 +326,64 @@ footer {
       justify-content: space-between;
       flex-wrap: wrap; }
       .episodios .contenedor-podcast iframe {
+        margin: 0;
         max-width: 47.048%;
-        max-height: 232px; }
+        max-height: 232px;
+        padding-bottom: 72px; }
 
   .nosotros .contenedor-nosotros {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center; }
     .nosotros .contenedor-nosotros img {
-      max-width: 31.8%;
-      transform: translateY(5px); }
-    .nosotros .contenedor-nosotros nosotros-text-container {
-      width: 32%; } }
+      margin-right: 0;
+      width: 31.8%;
+      height: 660px;
+      transform: translateY(-33px);
+      margin-left: 13.9%; }
+    .nosotros .contenedor-nosotros .nosotros-text-container {
+      margin: 0;
+      padding: 0;
+      max-width: 32%;
+      margin-right: 17.8%; }
+      .nosotros .contenedor-nosotros .nosotros-text-container h2 {
+        width: 100%;
+        font-size: 48px;
+        margin-bottom: 24px; }
+      .nosotros .contenedor-nosotros .nosotros-text-container p {
+        line-height: 24px;
+        font-size: 16px;
+        font-weight: 400; }
+
+  .invitados h2 {
+    padding: 0;
+    font-size: 48px;
+    margin-left: 13.9%;
+    margin-bottom: 36px; }
+  .invitados .galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .invitados .galeria img {
+      width: calc(100%/3);
+      height: 100%; }
+
+  .temas {
+    padding: 0; }
+    .temas h2 {
+      margin-left: 13.9%;
+      font-size: 48px;
+      margin-top: 64px; }
+    .temas .contenedor-iconos {
+      margin: 56px 15.3% 34px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .temas .contenedor-iconos div {
+        margin: 0; }
+        .temas .contenedor-iconos div h3 {
+          max-width: 220px; }
+
+  .novedades {
+    height: 518px; } }

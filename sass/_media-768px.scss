@@ -22,7 +22,8 @@
                 margin-top: 120px;
                 font-size: 64px;
                 width: 100%;
-                &:after{
+
+                &:after {
                     content: ".";
                     color: #0000EC;
                 }
@@ -106,27 +107,107 @@
             flex-wrap: wrap;
 
             iframe {
+                margin: 0;
                 max-width: 47.048%;
                 max-height: 232px;
+                padding-bottom: 72px;
             }
         }
     }
-    
+
     // empieza sección de nosotros
-    .nosotros{
-        .contenedor-nosotros{
+    .nosotros {
+        .contenedor-nosotros {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
-            img{
-                max-width: 31.8%;
-                transform: translateY(5px);
-                
+
+            img {
+                margin-right: 0;
+
+                width: 31.8%;
+                height: 660px;
+                transform: translateY(-33px);
+                margin-left: 13.9%;
             }
-            nosotros-text-container{
-                width: 32%;
+
+            .nosotros-text-container {
+                margin: 0;
+                padding: 0;
+                max-width: 32%;
+                margin-right: 17.8%;
+
+                h2 {
+                    width: 100%;
+                    font-size: 48px;
+                    margin-bottom: 24px;
+                }
+
+                p {
+                    line-height: 24px;
+                    font-size: 16px;
+                    font-weight: 400;
+
+                }
             }
+        }
+    }
+
+    //seccion invitados
+
+    .invitados {
+
+        h2 {
+            padding: 0;
+            font-size: 48px;
+            margin-left: 13.9%;
+            margin-bottom: 36px;
+        }
+
+        .galeria {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            img {
+                width: calc(100%/3);
+                height: 100%;
+            }
+        }
+    }
+
+    //seccion temas
+
+    .temas{
+        padding: 0;
+        h2{
+            margin-left: 13.9%;
+            font-size: 48px;
+            margin-top: 64px;
+        }
+        .contenedor-iconos{
+            margin: 56px 15.3% 34px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            div{
+                margin: 0;
+                h3{
+                    max-width: 220px;
+                }
+            }
+        }
+    }
+
+    //seccion novedades
+    .novedades{
+        height: 518px;
+        h2{
+
+        }
+        a{
+
         }
     }
 }
