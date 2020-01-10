@@ -1,0 +1,132 @@
+@media (min-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header {
+
+        //header
+        .fa-bars {
+            display: none;
+        }
+
+        .txt-header {
+            margin-left: 13.9%;
+
+            h1 {
+                margin-top: 120px;
+                font-size: 64px;
+                width: 100%;
+                &:after{
+                    content: ".";
+                    color: #0000EC;
+                }
+            }
+
+
+            p {
+                visibility: hidden;
+                width: 628px;
+                margin-bottom: 56px;
+            }
+
+            p:before {
+                font-size: 16px;
+                content: "El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.";
+                visibility: visible;
+
+            }
+
+        }
+
+        nav {
+            justify-content: space-between;
+            margin: 0 6.9%;
+            height: 80px;
+
+            .logo {
+                width: 36px;
+            }
+
+            .btn {
+                width: 40.4%;
+
+
+                .listas-nav {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    li {
+                        background: white;
+                        padding: 0;
+                        margin: 0;
+
+                        a {
+                            color: #060A24;
+                            font-size: 16px;
+                            letter-spacing: 0;
+                            line-height: 28px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .boton {
+            width: 226px;
+            height: 56px;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+    }
+
+    //termina header
+    .episodios {
+        padding: 0;
+        margin: 0;
+        display: block;
+        padding-top: 176px;
+
+        .contenedor-podcast {
+            padding: 0;
+            margin: 26px 6.9%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            iframe {
+                max-width: 47.048%;
+                max-height: 232px;
+            }
+        }
+    }
+}
+
+// empieza sección de nosotros
+.nosotros{
+    .contenedor-nosotros{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            max-width: 31.8%;
+            transform: translateY(5px);
+
+        }
+        nosotros-text-container{
+            width: 32%;
+        }
+    }
+}
