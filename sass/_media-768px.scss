@@ -111,22 +111,22 @@
             }
         }
     }
-}
-
-// empieza sección de nosotros
-.nosotros{
-    .contenedor-nosotros{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        img{
-            max-width: 31.8%;
-            transform: translateY(5px);
-
-        }
-        nosotros-text-container{
-            width: 32%;
+    
+    // empieza sección de nosotros
+    .nosotros{
+        .contenedor-nosotros{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            img{
+                max-width: 31.8%;
+                transform: translateY(5px);
+                
+            }
+            nosotros-text-container{
+                width: 32%;
+            }
         }
     }
 }

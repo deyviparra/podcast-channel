@@ -1,0 +1,232 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  font-family: "Segoe UI"; }
+
+ul,
+ol {
+  list-style: none; }
+
+header {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  color: white; }
+
+.header-background .r1, .header-background .r2, .header-background .r3, .header-background .r4, .header-background .r5, .header-background .r6, .header-background .r7, .header-background .r8 {
+  position: absolute;
+  width: 20%;
+  height: 20%; }
+
+.header-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(138deg, rgba(255, 0, 0, 0.575) -10%, rgba(56, 15, 15, 0.705), #0458ff 120%), #ff0000;
+  transform: skewY(-10deg);
+  transform-origin: top left;
+  z-index: -1; }
+  .header-background .r1 {
+    background: linear-gradient(135deg, rgba(134, 14, 14, 0.74), rgba(153, 14, 14, 0.5));
+    height: 30%; }
+  .header-background .r2 {
+    top: 0px;
+    left: 30%;
+    height: 30%;
+    background: rgba(138, 35, 49, 0.808); }
+  .header-background .r3 {
+    top: 0%;
+    left: 60%;
+    height: 40%;
+    width: 18%;
+    background: rgba(99, 21, 43, 0.623); }
+  .header-background .r4 {
+    top: 70%;
+    left: 80%;
+    height: 30%;
+    width: 40%;
+    background: linear-gradient(65deg, #cc3232, #2513db); }
+  .header-background .r5 {
+    top: 80%;
+    left: 60%;
+    height: 20%;
+    background: linear-gradient(135deg, #2b218d, #9b1515); }
+  .header-background .r6 {
+    top: 90%;
+    height: 10%;
+    left: 30%;
+    width: 20%;
+    background: linear-gradient(24deg, #af0808, #111949 120%); }
+  .header-background .r7 {
+    top: 60%;
+    height: 40%;
+    width: 20%;
+    background: linear-gradient(211deg, #2b218d -50%, #d20303); }
+  .header-background .r8 {
+    top: 50%;
+    left: 26%;
+    height: 18%;
+    width: 30%;
+    background: rgba(150, 8, 8, 0.637); }
+
+.logo {
+  margin-top: -5px;
+  width: 200px; }
+
+.fa-bars {
+  margin: 15px;
+  font-size: 30px; }
+
+.fa-times {
+  margin: 15px;
+  font-size: 30px;
+  display: none; }
+
+.btncontrol {
+  display: none; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 44px; }
+  nav label {
+    display: inline; }
+    nav label ul {
+      display: none;
+      box-sizing: border-box;
+      width: 320px;
+      background: linear-gradient(138deg, rgba(255, 0, 0, 0.575) -10%, rgba(56, 15, 15, 0.705), #0458ff 110%), #ff0000; }
+      nav label ul li {
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1.6% 1.1%; }
+        nav label ul li a {
+          text-decoration: none;
+          font-family: IBMPlexMono;
+          font-size: 16px;
+          color: #ffffff;
+          letter-spacing: 0;
+          line-height: 28px; }
+        nav label ul li a:target {
+          font-family: IBMPlexMono;
+          font-size: 16px;
+          color: rgba(6, 10, 36, 0.56);
+          letter-spacing: 0;
+          line-height: 28px;
+          text-decoration: line-through; }
+        nav label ul li a:hover {
+          font-family: IBMPlexMono-Medium;
+          font-size: 16px;
+          color: #202b42;
+          letter-spacing: 0;
+          line-height: 28px;
+          text-decoration: line-through; }
+
+.txt-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  margin: 0px 20px;
+  text-align: center;
+  max-width: 550px; }
+  .txt-header h1 {
+    margin: 20px; }
+  .txt-header a {
+    margin: 20px;
+    padding: 10px 25px;
+    background: radial-gradient(ellipse, #240dff, #29184f);
+    color: white;
+    text-decoration: none;
+    max-width: 300px; }
+
+.novedades {
+  margin: 30px 0px; }
+  .novedades h2 {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 36px; }
+
+.caja-podcast {
+  margin: 10px;
+  display: flex;
+  justify-content: center; }
+  .caja-podcast p {
+    display: none; }
+  .caja-podcast iframe {
+    max-width: 90%; }
+
+@media (max-width: 767px) {
+  .btncontrol:checked + label > ul {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    display: inline-block;
+    width: 100%;
+    z-index: 1; }
+    .btncontrol:checked + label > ul li {
+      border: 1px solid white;
+      justify-content: center; }
+
+  .btncontrol:checked + label > svg.fa-bars {
+    display: none; }
+
+  .btncontrol:checked + label > svg.fa-times {
+    display: flex;
+    z-index: 2; } }
+@media (min-width: 768px) {
+  .fa-bars {
+    display: none; }
+
+  .txt-header {
+    left: 15%;
+    top: 30%; }
+
+  header {
+    height: 700px; }
+
+  nav {
+    justify-content: space-around; }
+    nav label ul {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      height: 80px;
+      width: 500px;
+      background: none; }
+      nav label ul li {
+        background: transparent;
+        padding: 2.7% 3.3%; }
+        nav label ul li a {
+          font-family: IBMPlexMono;
+          font-size: 16px;
+          color: white;
+          letter-spacing: 0;
+          line-height: 28px; }
+
+  .caja-podcast {
+    margin: 10px;
+    display: flex;
+    align-items: center; }
+    .caja-podcast iframe {
+      max-width: 60%; }
+    .caja-podcast p {
+      margin: 20px;
+      width: 40%;
+      text-align: justify;
+      display: inline-block; }
+
+  .contenedor-podcast {
+    max-width: 60%;
+    margin-left: 5%; } }
+
+/*# sourceMappingURL=estilos.css.map */

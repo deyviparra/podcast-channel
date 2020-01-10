@@ -111,16 +111,15 @@ nav {
           text-decoration: line-through; }
 
 .episodios {
-  padding: 0 5%;
   position: relative;
   color: white;
   padding-top: 64px; }
   .episodios h2 {
+    padding: 0 5%;
     font-size: 36px;
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 300;
-    color: #ffffff;
-    margin-left: 5%; }
+    color: #ffffff; }
   .episodios .contenedor-podcast {
     display: flex;
     flex-wrap: wrap;
@@ -192,6 +191,7 @@ nav {
     font-size: 36px;
     letter-spacing: 0;
     line-height: 42px;
+    margin-top: 48px;
     font-weight: 100;
     margin-bottom: 24px; }
   .temas .contenedor-iconos div {
@@ -327,14 +327,15 @@ footer {
       flex-wrap: wrap; }
       .episodios .contenedor-podcast iframe {
         max-width: 47.048%;
-        max-height: 232px; } }
-.nosotros .contenedor-nosotros {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center; }
-  .nosotros .contenedor-nosotros img {
-    max-width: 31.8%;
-    transform: translateY(5px); }
-  .nosotros .contenedor-nosotros nosotros-text-container {
-    width: 32%; }
+        max-height: 232px; }
+
+  .nosotros .contenedor-nosotros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    .nosotros .contenedor-nosotros img {
+      max-width: 31.8%;
+      transform: translateY(5px); }
+    .nosotros .contenedor-nosotros nosotros-text-container {
+      width: 32%; } }

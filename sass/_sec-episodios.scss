@@ -1,14 +1,13 @@
 .episodios {
-  @include padding-5;
   position: relative;
   color: white;
   padding-top: 64px;
   h2 {
+    @include padding-5;
     font-size: 36px;
     font-family: $font-sans;
     font-weight: 300;
     color: #ffffff;
-    margin-left: 5%;
   }
 
   .contenedor-podcast {
