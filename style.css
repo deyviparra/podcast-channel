@@ -16,6 +16,7 @@ header {
   padding: 0 5%; }
 
 .txt-header {
+  padding: 0 5%;
   display: flex;
   flex-direction: column; }
   .txt-header h1 {

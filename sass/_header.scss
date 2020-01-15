@@ -4,6 +4,7 @@ header{
     @include padding-5;
 }
 .txt-header {
+    @include padding-5;
     display: flex;
     flex-direction: column;
 
