@@ -9,42 +9,15 @@
     }
 
     header {
-
+        position: sticky;
+        top: 0;
+        padding: 0;
+        z-index: 3;
+        background-color: white;
         //header
         .fa-bars {
             display: none;
         }
-
-        .txt-header {
-            margin-left: 13.9%;
-
-            h1 {
-                margin-top: 120px;
-                font-size: 64px;
-                width: 100%;
-
-                &:after {
-                    content: ".";
-                    color: #0000EC;
-                }
-            }
-
-
-            p {
-                visibility: hidden;
-                width: 628px;
-                margin-bottom: 56px;
-            }
-
-            p:before {
-                font-size: 16px;
-                content: "El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.";
-                visibility: visible;
-
-            }
-
-        }
-
         nav {
             justify-content: space-between;
             margin: 0 6.9%;
@@ -73,12 +46,35 @@
                             font-size: 16px;
                             letter-spacing: 0;
                             line-height: 28px;
+                            &:hover{
+                                color: #00F3BB ;
+                            }
+                            &:active{
+                                text-decoration: line-through;
+                               color: #060a248f;
+                            }
                         }
                     }
                 }
             }
         }
 
+        
+    }
+
+    .txt-header {
+        margin-left: 13.9%;
+
+        h1 {
+            margin-top: 120px;
+            font-size: 64px;
+            width: 100%;
+
+            &:after {
+                content: ".";
+                color: #0000EC;
+            }
+        }
         .boton {
             width: 226px;
             height: 56px;
@@ -89,7 +85,26 @@
             align-items: center;
             justify-content: center;
             font-size: 18px;
+            &:hover{
+                color: white;
+
+                background-image: linear-gradient(to left, #0000FE, #00F0B8 );
+            }
         }
+
+        p {
+            visibility: hidden;
+            width: 628px;
+            margin-bottom: 56px;
+        }
+
+        p:before {
+            font-size: 16px;
+            content: "El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.";
+            visibility: visible;
+
+        }
+
     }
 
     //termina header
@@ -222,7 +237,11 @@
             font-size: 18px;
             padding: 16px 4.1%;
         }
-
+        .boton:hover{
+            color: white;
+                background-image: linear-gradient(to left, #0000FE, #00F0B8 );
+            
+        }
     }
 
     //footer
