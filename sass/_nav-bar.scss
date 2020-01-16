@@ -13,13 +13,44 @@ nav {
     .btncontrol {
         display: none;
     }
-    @media (max-width:768px){
+    @media (max-width:1024px){
+        .listas-nav {
+            display: none;
+            box-sizing: border-box;
+            width: 100%;
+    
+            li {
+                height: 35px;
+                display: flex;
+                align-items: center;
+    
+    
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: #ffffff;
+                    letter-spacing: 0;
+                    line-height: 28px;
+                }
+    
+                a:target {
+                    color: rgba(6, 10, 36, 0.56);
+                    text-decoration: line-through;
+                }
+    
+                a:hover {
+                    font-size: medium;
+                    color: #202b42;
+                    text-decoration: line-through;
+                }
+            }
+        }
         
-    :checked+label>ul {
+    .btncontrol:checked ~ .listas-nav {
         position: absolute;
         top: 44px;
         left: 0px;
-        display: inline-block;
+        display:block;
         width: 100%;
         background: #0000EC;
         z-index: 1;
@@ -38,11 +69,11 @@ nav {
         }
     }
 
-    :checked+label>svg.fa-bars {
+    .btncontrol:checked+label>svg.fa-bars {
         display: none;
     }
 
-    :checked+label>svg.fa-times {
+    .btncontrol:checked+label>svg.fa-times {
         display: flex;
         z-index: 2;
     }
@@ -60,36 +91,7 @@ nav {
             display: none;
         }
 
-        ul {
-            display: none;
-            box-sizing: border-box;
-            width: 100%;
-
-            li {
-                height: 35px;
-                display: flex;
-                align-items: center;
-
-
-                a {
-                    text-decoration: none;
-                    font-size: 16px;
-                    color: #ffffff;
-                    letter-spacing: 0;
-                    line-height: 28px;
-                }
-
-                a:target {
-                    color: rgba(6, 10, 36, 0.56);
-                    text-decoration: line-through;
-                }
-
-                a:hover {
-                    font-size: medium;
-                    color: #202b42;
-                    text-decoration: line-through;
-                }
-            }
-        }
+        
     }
+    
 }

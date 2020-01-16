@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     * {
         margin: 0;
         padding: 0;
@@ -26,33 +26,28 @@
             .logo {
                 width: 36px;
             }
+            .listas-nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
 
-            .btn {
-                width: 40.4%;
+                li {
+                    background: white;
+                    padding: 0;
+                    margin-left: 48px;
 
-
-                .listas-nav {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-
-                    li {
-                        background: white;
-                        padding: 0;
-                        margin: 0;
-
-                        a {
-                            color: #060A24;
-                            font-size: 16px;
-                            letter-spacing: 0;
-                            line-height: 28px;
-                            &:hover{
-                                color: #00F3BB ;
-                            }
-                            &:active{
-                                text-decoration: line-through;
-                               color: #060a248f;
-                            }
+                    a {
+                        color: #060A24;
+                        font-size: 16px;
+                        letter-spacing: 0;
+                        line-height: 28px;
+                        &:hover{
+                            color: #00F3BB ;
+                            text-decoration: line-through;
+                        }
+                        &:active{
+                            text-decoration: line-through;
+                           color: #060a248f;
                         }
                     }
                 }

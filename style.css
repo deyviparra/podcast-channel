@@ -9,8 +9,16 @@ ul,
 ol {
   list-style: none; }
 
+a {
+  text-decoration: none; }
+
 body {
   font-family: "IBM Plex Mono", monospace; }
+
+iframe {
+  border: 0;
+  width: 100%;
+  height: 232px; }
 
 header {
   padding: 0 5%; }
@@ -29,6 +37,8 @@ header {
     letter-spacing: 0;
     line-height: 42px;
     width: 80%; }
+    .txt-header h1 .world-tachado {
+      text-decoration: line-through; }
   .txt-header p {
     font-size: 14px;
     text-align: justify;
@@ -59,27 +69,48 @@ nav {
     width: 24px; }
   nav .btncontrol {
     display: none; }
-  @media (max-width: 768px) {
-    nav :checked + label > ul {
+  @media (max-width: 1024px) {
+    nav .listas-nav {
+      display: none;
+      box-sizing: border-box;
+      width: 100%; }
+      nav .listas-nav li {
+        height: 35px;
+        display: flex;
+        align-items: center; }
+        nav .listas-nav li a {
+          text-decoration: none;
+          font-size: 16px;
+          color: #ffffff;
+          letter-spacing: 0;
+          line-height: 28px; }
+        nav .listas-nav li a:target {
+          color: rgba(6, 10, 36, 0.56);
+          text-decoration: line-through; }
+        nav .listas-nav li a:hover {
+          font-size: medium;
+          color: #202b42;
+          text-decoration: line-through; }
+    nav .btncontrol:checked ~ .listas-nav {
       position: absolute;
       top: 44px;
       left: 0px;
-      display: inline-block;
+      display: block;
       width: 100%;
       background: #0000EC;
       z-index: 1;
       padding-top: 16px; }
-      nav :checked + label > ul li {
+      nav .btncontrol:checked ~ .listas-nav li {
         margin-bottom: 24px;
         margin-left: 5%; }
-        nav :checked + label > ul li a {
+        nav .btncontrol:checked ~ .listas-nav li a {
           font-size: 16px;
           color: #FFFFFF;
           letter-spacing: 0;
           line-height: 28px; }
-    nav :checked + label > svg.fa-bars {
+    nav .btncontrol:checked + label > svg.fa-bars {
       display: none; }
-    nav :checked + label > svg.fa-times {
+    nav .btncontrol:checked + label > svg.fa-times {
       display: flex;
       z-index: 2; } }
   nav .btn {
@@ -89,27 +120,6 @@ nav {
     nav .btn .fa-times {
       font-size: 18px;
       display: none; }
-    nav .btn ul {
-      display: none;
-      box-sizing: border-box;
-      width: 100%; }
-      nav .btn ul li {
-        height: 35px;
-        display: flex;
-        align-items: center; }
-        nav .btn ul li a {
-          text-decoration: none;
-          font-size: 16px;
-          color: #ffffff;
-          letter-spacing: 0;
-          line-height: 28px; }
-        nav .btn ul li a:target {
-          color: rgba(6, 10, 36, 0.56);
-          text-decoration: line-through; }
-        nav .btn ul li a:hover {
-          font-size: medium;
-          color: #202b42;
-          text-decoration: line-through; }
 
 .episodios {
   position: relative;
@@ -255,7 +265,7 @@ footer {
     footer .contenedor-redes i {
       font-size: 12px; }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   * {
     margin: 0;
     padding: 0; }
@@ -277,26 +287,25 @@ footer {
       height: 80px; }
       header nav .logo {
         width: 36px; }
-      header nav .btn {
-        width: 40.4%; }
-        header nav .btn .listas-nav {
-          display: flex;
-          align-items: center;
-          justify-content: space-between; }
-          header nav .btn .listas-nav li {
-            background: white;
-            padding: 0;
-            margin: 0; }
-            header nav .btn .listas-nav li a {
-              color: #060A24;
-              font-size: 16px;
-              letter-spacing: 0;
-              line-height: 28px; }
-              header nav .btn .listas-nav li a:hover {
-                color: #00F3BB; }
-              header nav .btn .listas-nav li a:active {
-                text-decoration: line-through;
-                color: #060a248f; }
+      header nav .listas-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        header nav .listas-nav li {
+          background: white;
+          padding: 0;
+          margin-left: 48px; }
+          header nav .listas-nav li a {
+            color: #060A24;
+            font-size: 16px;
+            letter-spacing: 0;
+            line-height: 28px; }
+            header nav .listas-nav li a:hover {
+              color: #00F3BB;
+              text-decoration: line-through; }
+            header nav .listas-nav li a:active {
+              text-decoration: line-through;
+              color: #060a248f; }
 
   .txt-header {
     margin-left: 13.9%; }
