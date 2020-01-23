@@ -14,13 +14,13 @@
     }
 
     .contenedor-iconos {
-        
+
         div {
-            align-self: center;
-            flex-direction: column;
             display: flex;
+            flex-direction: column;
+            align-self: flex-start;
             margin: 49px 0;
-            
+
             h3 {
                 margin-top: 13px;
                 font-family: $font-sans;

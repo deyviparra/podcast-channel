@@ -10,10 +10,14 @@ ol {
   list-style: none; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  letter-spacing: 0; }
 
 body {
   font-family: "IBM Plex Mono", monospace; }
+
+p {
+  letter-spacing: 0; }
 
 header {
   padding: 0 5%; }
@@ -37,23 +41,20 @@ header {
   .txt-header p {
     font-size: 14px;
     text-align: justify;
-    letter-spacing: 0;
     line-height: 22px;
     font-weight: 400; }
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .txt-header h1:after {
       content: "."; } }
 
 .boton {
   font-size: medium;
   font-weight: 500;
-  letter-spacing: 0;
   text-align: center;
   line-height: 22px;
   margin: 13px 0px 24px;
   padding: 10px 25px;
-  background: #00f3bb;
-  text-decoration: none; }
+  background: #00f3bb; }
 
 nav {
   display: flex;
@@ -74,16 +75,13 @@ nav {
         display: flex;
         align-items: center; }
         nav .listas-nav li a {
-          text-decoration: none;
           font-size: 16px;
           color: #ffffff;
-          letter-spacing: 0;
           line-height: 28px; }
         nav .listas-nav li a:target {
           color: rgba(6, 10, 36, 0.56);
           text-decoration: line-through; }
         nav .listas-nav li a:hover {
-          font-size: medium;
           color: #202b42;
           text-decoration: line-through; }
     nav .btncontrol:checked ~ .listas-nav {
@@ -103,11 +101,10 @@ nav {
           color: #FFFFFF;
           letter-spacing: 0;
           line-height: 28px; }
-    nav .btncontrol:checked + label > svg.fa-bars {
+    nav .btncontrol:checked + label .fa-bars {
       display: none; }
-    nav .btncontrol:checked + label > svg.fa-times {
-      display: flex;
-      z-index: 2; } }
+    nav .btncontrol:checked + label .fa-times {
+      display: block; } }
   nav .btn {
     display: inline; }
     nav .btn .fa-bars {
@@ -203,9 +200,9 @@ nav {
     font-weight: 100;
     margin-bottom: 24px; }
   .temas .contenedor-iconos div {
-    align-self: center;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
+    align-self: flex-start;
     margin: 49px 0; }
     .temas .contenedor-iconos div h3 {
       margin-top: 13px;

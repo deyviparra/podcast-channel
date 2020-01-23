@@ -13,70 +13,66 @@ nav {
     .btncontrol {
         display: none;
     }
-    @media (max-width:1024px){
+
+    @media (max-width:1024px) {
         .listas-nav {
             display: none;
             box-sizing: border-box;
             width: 100%;
-    
+
             li {
                 height: 35px;
                 display: flex;
                 align-items: center;
-    
-    
+
                 a {
-                    text-decoration: none;
                     font-size: 16px;
                     color: #ffffff;
-                    letter-spacing: 0;
                     line-height: 28px;
                 }
-    
+
                 a:target {
                     color: rgba(6, 10, 36, 0.56);
                     text-decoration: line-through;
                 }
-    
+
                 a:hover {
-                    font-size: medium;
                     color: #202b42;
                     text-decoration: line-through;
                 }
             }
         }
-        
-    .btncontrol:checked ~ .listas-nav {
-        position: absolute;
-        top: 44px;
-        left: 0px;
-        display:block;
-        width: 100%;
-        background: #0000EC;
-        z-index: 1;
-        padding-top: 16px;
 
-        li {
-            margin-bottom: 24px;
-            margin-left: 5%;
+        .btncontrol:checked~.listas-nav {
+            position: absolute;
+            top: 44px;
+            left: 0px;
+            display: block;
+            width: 100%;
+            background: #0000EC;
+            z-index: 1;
+            padding-top: 16px;
 
-            a {
-                font-size: 16px;
-                color: #FFFFFF;
-                letter-spacing: 0;
-                line-height: 28px;
+            li {
+                margin-bottom: 24px;
+                margin-left: 5%;
+
+                a {
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    letter-spacing: 0;
+                    line-height: 28px;
+                }
             }
         }
-    }
 
-    .btncontrol:checked+label>svg.fa-bars {
-        display: none;
-    }
+        .btncontrol:checked+label .fa-bars {
+            display: none;
+        }
 
-    .btncontrol:checked+label>svg.fa-times {
-        display: flex;
-        z-index: 2;
-    }
+        .btncontrol:checked+label .fa-times {
+            display: block;
+        }
     }
 
     .btn {
@@ -90,8 +86,5 @@ nav {
             font-size: 18px;
             display: none;
         }
-
-        
     }
-    
 }

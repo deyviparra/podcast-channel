@@ -24,14 +24,12 @@ header{
     }
 
     p {
-
         font-size: 14px;
         text-align: justify;
-        letter-spacing: 0;
         line-height: 22px;
         font-weight: 400;
     }
-    @media (max-width:768px){
+    @media (max-width:1024px){
         h1:after{
             content: ".";
         
@@ -43,11 +41,9 @@ header{
 .boton {
     font-size: medium;
     font-weight: 500;
-    letter-spacing: 0;
     text-align: center;
     line-height: 22px;
     margin: 13px 0px 24px;
     padding: 10px 25px;
     background: #00f3bb;
-    text-decoration: none;
 }
