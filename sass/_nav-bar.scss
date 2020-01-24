@@ -36,10 +36,7 @@ nav {
                     text-decoration: line-through;
                 }
 
-                a:hover {
-                    color: #202b42;
-                    text-decoration: line-through;
-                }
+
             }
         }
 
@@ -66,11 +63,11 @@ nav {
             }
         }
 
-        .btncontrol:checked+label .fa-bars {
+        .btncontrol:checked+.btn .fa-bars {
             display: none;
         }
 
-        .btncontrol:checked+label .fa-times {
+        .btncontrol:checked+.btn .fa-times {
             display: block;
         }
     }

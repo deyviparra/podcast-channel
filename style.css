@@ -81,9 +81,6 @@ nav {
         nav .listas-nav li a:target {
           color: rgba(6, 10, 36, 0.56);
           text-decoration: line-through; }
-        nav .listas-nav li a:hover {
-          color: #202b42;
-          text-decoration: line-through; }
     nav .btncontrol:checked ~ .listas-nav {
       position: absolute;
       top: 44px;
@@ -101,9 +98,9 @@ nav {
           color: #FFFFFF;
           letter-spacing: 0;
           line-height: 28px; }
-    nav .btncontrol:checked + label .fa-bars {
+    nav .btncontrol:checked + .btn .fa-bars {
       display: none; }
-    nav .btncontrol:checked + label .fa-times {
+    nav .btncontrol:checked + .btn .fa-times {
       display: block; } }
   nav .btn {
     display: inline; }
