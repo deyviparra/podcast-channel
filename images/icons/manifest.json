@@ -2,7 +2,7 @@
  "name": "Podcast Channel",
  "short_name": "Podcast",
  "lang": "es-ES",
- "start_url": "podcast-channel/",
+ "start_url": "/",
  "background_color": "#00F3BB",
  "theme_color": "#0000ED",
  "display": "standalone",
