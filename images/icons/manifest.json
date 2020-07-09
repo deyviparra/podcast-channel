@@ -2,7 +2,7 @@
  "name": "Podcast Channel",
  "short_name": "Podcast",
  "lang": "es-ES",
- "start_url": "https://deyviparra.github.io/podcast-channel/",
+ "start_url": "podcast-channel/",
  "background_color": "#00F3BB",
  "theme_color": "#0000ED",
  "display": "standalone",
